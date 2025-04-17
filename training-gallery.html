@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <header>
+        <div class="logo-container">
+            <div class="logo-left">
+                <img src="images/logo2.jpg" alt="اللوجو الأيسر" />
+            </div>
+            <h1>
+                معرض الصور
+            </h1>
+            <div class="logo-right">
+                <img src="images/logo1.jpeg" alt="اللوجو الأيمن" />
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">عن القسم</a></li>
+                <li><a href="awards.html">الجوائز</a></li>
+                <li><a href="training.html">التدريب الميداني</a></li>
+                <li><a href="graduates.html">الخريجين</a></li>
+                <li><a href="faculty.html">الدكاترة</a></li>
+                <li><a href="activities.html">الفعاليات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <meta charset="UTF-8">
+    <title>معرض الصور</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>معرض الصور</h1>
+
+    <div class="gallery-container">
+        <label for="placeSelect">اختر مكان التدريب:</label>
+        <select id="placeSelect" onchange="showImages()">
+            <option value="">-- اختر --</option>
+            <option value="BUE">The British University in Egypt - BUE</option>
+            <option value="GAL">Galala University</option>
+            <option value="MI">مكتبه مصر العامه</option>>
+            <option value="MU">Misr University for Science and Technology (MUST) </option>
+            <option value="CA">Canadian University and Egypt</option>
+            <option value="AK">مجلس الوزراء</option>
+
+
+        </select>
+
+        <div class="images" id="imageContainer">
+        </div>
+    </div>
+
+    <script>
+        const imagesData = {
+            BUE: [
+                'images/bue1.jpg',
+                'images/bue2.jpg',
+                'images/bue3.jpg',
+                'images/bue4.jpg'
+            ],
+            GAL: [
+                'images/gal1.jpg',
+                'images/gal2.jpg',
+                'images/gal3.jpg',
+                'images/gal4.jpg',
+                'images/gal5.jpg',
+                'images/gal6.jpg',
+                'images/gal7.jpg',
+                'images/gal8.jpg',
+                'images/gal9.jpg'
+            ],
+            ID: [
+                'images/ID1.jpg',
+                'images/ID2.jpg',
+                'images/ID3.jpg',
+                'images/ID4.jpg'
+
+            ],
+            MI: [
+                'images/mi1.jpg',
+                'images/mi2.jpg',
+                'images/mi3.jpg',
+                'images/mi4.jpg'
+            ],
+            MU: [
+                'images/mu1.jpg',
+                'images/mu2.jpg',
+                'images/mu3.jpg',
+                'images/mu4.jpg',
+                'images/mu5.jpg',
+                'images/mu6.jpg',
+                'images/mu7.jpg',
+                'images/mu8.jpg',
+                'images/mu9.jpg',
+                'images/mu10.jpg',
+                'images/mu11.jpg',
+                'images/mu12.jpg',
+                'images/mu13.jpg',
+                'images/mu14.jpg',
+                'images/mu15.jpg',
+                'images/mu16.jpg',
+                'images/mu17.jpg',
+                'images/mu18.jpg',
+                'images/mu19.jpg',
+                'images/mu20.jpg'
+            ],
+            CA: [
+                'images/ca1.jpg',
+                'images/ca2.jpg',
+                'images/ca3.jpg',
+                'images/ca6.jpg',
+                'images/ca7.jpg'
+            ],
+            AK: [
+                'images/ak1.jpeg',
+                'images/ak2.jpeg',
+                'images/ak3.jpeg',
+                'images/ak4.jpeg',
+                'images/ak5.jpeg',
+                'images/ak6.jpeg'
+            ]
+
+        };
+
+        function showImages() {
+            const place = document.getElementById('placeSelect').value;
+            const container = document.getElementById('imageContainer');
+            container.innerHTML = '';
+
+            if (imagesData[place]) {
+                imagesData[place].forEach(src => {
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.alt = 'صورة من التدريب';
+                    container.appendChild(img);
+                });
+            }
+        }
+    </script>
+
+    <footer>
+        <p>حقوق النشر &copy; 2025 قسم المكتبات والمعلومات – كلية الآداب – جامعة القاهرة</p>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/share/1Lq9ccVmm9/" target="_blank">
+                <img src="images/facebook.png" alt="فيسبوك" />
+            </a>
+            <a href="https://www.instagram.com/liscu.lib?igsh=NXN4YnB5dzFqaHJ5" target="_blank">
+                <img src="images/instagram.png" alt="انستجرام" />
+            </a>
+            <a href="https://youtube.com/channel/UCV0XVBdG3-0hFJpC891RISg?si=Fqs29VkLRKwxEUgc" target="_blank">
+                <img src="images/youtube.png" alt="يوتيوب" />
+            </a>
+    </footer>
+</body>
+
+</html>
