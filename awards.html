@@ -27,27 +27,22 @@
             text-decoration: underline;
         }
 
-        /* تصميم النصوص */
         .faculty-name {
             font-size: 22px;
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s ease;
             color: #343a40;
-            /* اللون الداكن كما كان سابقًا */
             padding: 10px 0;
         }
 
         .faculty-name:hover {
             color: #007bff;
-            /* اللون الأزرق عند التمرير */
             transform: scale(1.05);
-            /* تأثير تكبير عند المرور على الاسم */
         }
 
         .award-group {
             display: none;
-            /* إخفاء النصوص في البداية */
             margin-top: 10px;
             padding: 15px;
             background-color: #ffffff;
@@ -65,20 +60,16 @@
 
         .faculty-name:hover+.award-group {
             display: block;
-            /* عرض النصوص عند مرور الماوس على الاسم */
         }
 
-        /* عنوان القسم */
         .section-title {
             font-size: 28px;
             color: #343a40;
-            /* اللون الداكن كما كان سابقًا */
             font-weight: bold;
             text-align: center;
             margin-bottom: 30px;
         }
 
-        /* ترويسة التنقل */
         nav {
             margin-bottom: 40px;
         }
@@ -91,7 +82,7 @@
             <div class="logo-left">
                 <img src="images/logo2.jpg" alt="اللوجو الأيسر" />
             </div>
-            <h1> الجوائز - قسم مكتبات</h1>
+            <h1> الجو - قسم مكتبات</h1>
             <div class="logo-right">
                 <img src="images/logo1.jpeg" alt="اللوجو الأيمن" />
             </div>
@@ -110,9 +101,17 @@
 
     <section id="awards" class="section">
         <div class="container">
-            <h2 class="section-title">إنجازات دكاترة القسم من جوائز</h2>
+            <h2 class="section-title">إنجازات القسم واعضاء هيئه التدريس من جوائز</h2>
             <hr>
+            <div class="faculty-name">انجازات القسم </div>
+            <div class="award-group">
+                <p><strong>التصنيف العالمي لعام 2025:</strong> المركز 51</p>
+                <p><strong>التصنيف العالمي لعام 2024:</strong> المركز 38</p>
+                <p><strong> معامل تأثير في تصنيف ديواج :</strong> 7 الذي يعد اعلي معامل </p>
 
+            </div>
+            <div class="content-list">
+            </div>
             <!-- أ.د. سعد محمد الهجرسي -->
             <div class="faculty-name">أ.د. سعد محمد الهجرسي</div>
             <div class="award-group">
@@ -156,6 +155,7 @@
                 <p> جائزة الإرشاد الأكاديمي من جامعة الملك عبد العزيز )جدة(</p>
                 <p> جائزة الجامعة للإشراف المتميز على الرسائل الجامعية في تخصص الوثائق</p>
             </div>
+            <!--   أ.د. اسامه  -->
 
             <div class="faculty-name">أ.د. أسامة السيد محمود</div>
             <div class="award-group">
@@ -167,6 +167,7 @@
                 <p> درع تكريم الاتحاد العربي للمكتبات والمعلومات )أعلم( بمؤتمر تونس عن رئاسته للجنة العلمية للمؤتمرات
                     السنوية للاتحاد، والمؤتمرات المشتركة مع الإفلا من 2013 الى 2019</p>
             </div>
+            <!-- أ.د. شريف شاهين   -->
 
             <div class="faculty-name">أ.د. شريف كامل شاهين</div>
             <div class="award-group">
@@ -192,6 +193,7 @@
                 <p> جائزة الشارقة للأدب المكتبي )المركز الأول( – الدورة التاسعة عشر</p>
                 <p> درع مكتبات مصر العامة لمؤتمرها الأول</p>
             </div>
+            <!-- أ.د. هشام محمود  -->
 
             <div class="faculty-name">أ.د. هشام محمود عزمي</div>
             <div class="award-group">
@@ -199,12 +201,14 @@
                     مؤسسة قطر للتربية وتنمية المجتمع</p>
                 <p> جائزة الرواد من شركة نسيج – الاتحاد العربي للمكتبات والمعلومات</p>
             </div>
+            <!-- أ.د. هاشم  -->
 
             <div class="faculty-name">أ.د. هاشم فرحات</div>
             <div class="award-group">
                 <p> جائزة التميز في التدريس من جامعة الملك سعود.</p>
                 <p> جائزة أفضل مواقع أعضاء هيئة التدريس بجامعة الملك سعود )الترتيب الثاني على مستوى الكلية(</p>
             </div>
+            <!-- أ.د. سارفيناز  -->
 
             <div class="faculty-name">أ.د. سرفيناز أحمد حافظ</div>
             <div class="award-group">
@@ -215,6 +219,7 @@
                 <p> شهادة شكر وتقدير من كلية العلوم الاجتماعية بجامعه أم القرى على الجهود المبذولة من أعمال اللجنة
                     المشكلة للاعتماد الأكاديمي بالكلية</p>
             </div>
+            <!-- أ.د. عصام احمد  -->
 
             <div class="faculty-name">أ.د. عصام أحمد حسين عيسوي</div>
             <div class="award-group">
@@ -223,17 +228,20 @@
                 <p> شهادة تكريم للإشراف على برنامج تدريبي للأرشفة الإلكترونية لطلاب قسم علم المعلومات جامعة الملك سعود
                     - من مدينة الملك عبد العزيز للعلوم والتقنية، الرياض، السعودية</p>
             </div>
+            <!-- أ.د. مصطفي حسام  -->
 
             <div class="faculty-name">د. مصطفى أمين حسام الدين</div>
             <div class="award-group">
                 <p> جائزة الرواد من شركة نسيج – الاتحاد العربي للمكتبات والمعلومات</p>
                 <p> درع الاتحاد العربي للمكتبات والمعلومات</p>
             </div>
+            <!-- أ.د. وفاء   -->
 
             <div class="faculty-name">د. وفاء صادق أمين</div>
             <div class="award-group">
                 <p> جائزة عضو هيئة التدريس المثالي – نادي أعضاء هيئة التدريس بجامعة القاهرة</p>
             </div>
+            <!-- أ.د. نرمين  -->
 
             <div class="faculty-name">د. نرمين عبد القادر</div>
             <div class="award-group">
@@ -241,6 +249,7 @@
                 <p> جائزة أ.د شوقي سالم لإدارة المعرفة والمعلوماتية أكاديمية البحث العلمي</p>
                 <p> جائزة الدولة التشجيعية فرع الكتاب والنشر المجلس الأعلى للثقافة – وزارة الثقافة</p>
             </div>
+            <!-- أ.د. محمد سالم  -->
 
             <div class="faculty-name">د. محمد سالم غنيم</div>
             <div class="award-group">
@@ -256,6 +265,7 @@
                     المستقبل؛ بعنوان: الجديد فـي مهن ودراسات المعلومات على النطاقين العربي والعالمي )القاهرة، -23 24
                     إبريل .(2018</p>
             </div>
+            <!-- أ.د. ايناس  -->
 
             <div class="faculty-name">د. إيناس عباس خضر</div>
             <div class="award-group">
@@ -264,38 +274,43 @@
                 <p> ميدالية المدرس المساعد المثالي وشهادة تقدير – نادي أعضاء هيئة التدريس بجامعة القاهرة</p>
                 <p> جائزة أفضل رسالة ماجستير بجامعة القاهرة</p>
             </div>
+            <!-- أ.د. اهداء  -->
 
             <div class="faculty-name">د. إهداء صلاح</div>
             <div class="award-group">
                 <p> جائزة أ.د شوقي سالم لإدارة المعرفة والمعلوماتية أكاديمية البحث العلمي</p>
             </div>
             <div class="content-list">
-                <!-- النصوص سيتم تحميلها هنا -->
             </div>
-
             <script>
                 let page = 1;
-                const contentList = document.querySelector('.content-list');
+                const loadMoreButton = document.getElementById('load-more');
+                const awardsList = document.getElementById('awards-list');
 
-                // دالة لتحميل النصوص عند التمرير للأسفل
-                const loadMoreContent = () => {
-                    fetch(`/load-more?page=${page}`)
-                        .then(response => response.text())
+                loadMoreButton.addEventListener('click', function () {
+                    fetch(`./load-more?page=${page}`)
+                        .then(response => response.json())
                         .then(data => {
-                            contentList.innerHTML += data; // إضافة النصوص الجديدة
-                            page++; // زيادة رقم الصفحة لتحميل المزيد
-                        });
-                };
+                            data.awards.forEach(award => {
+                                const awardElement = document.createElement('div');
+                                awardElement.classList.add('award');
+                                awardElement.innerHTML = `
+                          <h3>${award.name}</h3>
+                          <p>${award.description}</p>
+                        `;
+                                awardsList.appendChild(awardElement);
+                            });
 
-                // استماع لحدث التمرير
-                window.addEventListener('scroll', () => {
-                    if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
-                        loadMoreContent();
-                    }
+                            page++;
+                            if (!data.hasMore) {
+                                loadMoreButton.style.display = 'none';
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error loading data:', error);
+                        });
                 });
             </script>
-
-            <!-- يمكنك إضافة باقي الدكاترة بنفس الطريقة -->
 
         </div>
     </section>
